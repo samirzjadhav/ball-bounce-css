@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    40% {
+      top: 85%;
+      width: 100px;
+      height: 100px;
+    }
+    45% {
+      top: 87%;
+      width: 130px;
+      height: 70px;
+    }
+    60% {
+      width: 100px;
+      height: 100px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
